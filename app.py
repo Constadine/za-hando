@@ -5,7 +5,7 @@ from plots import create_heatmap
 
 st.set_page_config(
     page_title="Za-Hando Realm",
-    page_icon="🐗",  # You can use an emoji or the URL of an image
+    page_icon="🖐",  # You can use an emoji or the URL of an image
     layout="wide",  # You can choose "wide" or "centered"
 )
 
@@ -121,7 +121,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.markdown("<h2 style='text-align: center;'>Number of Nights to Stretch:</h2>"
-            f"<p style='text-align: center; font-size:25px'>{statistics['number_of_nights_to_stretch']}</p>", unsafe_allow_html=True)
+            f"<p style='text-align: center; font-size:25px'>{statistics['number_of_nights_to_stretch']} out of {len(df)}</p>", unsafe_allow_html=True)
 
 # Display the sentence with the formatted top factors
 st.markdown(f"<h2 style='text-align: center;'>Most stressful time of day:</h2>"
